@@ -8,8 +8,8 @@ namespace eTable.API.Data.Mappings
     {
         public void Configure(EntityTypeBuilder<User> builder)
         {
-            builder.ToTable("Users");
-            builder.HasKey(x => x.Id);
+            builder.ToTable("Users")
+                .HasKey(x => x.Id);
 
             builder.HasMany(u => u.Books)
                 .WithOne(b => b.User)
