@@ -1,0 +1,6 @@
+@et.API_HostAddress = http://localhost:5041
+
+GET {{et.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
