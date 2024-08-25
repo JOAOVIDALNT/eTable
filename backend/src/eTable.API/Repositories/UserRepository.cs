@@ -4,7 +4,7 @@ using eTable.API.Repositories.Interfaces;
 
 namespace eTable.API.Repositories
 {
-    public class GenreRepository(AppDbContext db) : Repository<Genre>(db), IGenreRepository
+    public class UserRepository(AppDbContext db) : Repository<User>(db), IUserRepository
     {
     }
 }
