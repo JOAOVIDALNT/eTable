@@ -12,6 +12,8 @@ namespace eTable.API.Data.Mappings
                 .ToTable("Books")
                 .HasKey(x => x.Id);
 
+            builder.Property(x => x.Title).HasMaxLength(100);
+
             builder
                 .HasOne(b => b.Author)
                 .WithMany(a => a.Books)

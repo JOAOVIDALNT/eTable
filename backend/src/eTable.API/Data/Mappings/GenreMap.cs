@@ -11,6 +11,8 @@ namespace eTable.API.Data.Mappings
             builder
                 .ToTable("Genres")
                 .HasKey(x => x.Id);
+
+            builder.Property(x => x.Description).HasMaxLength(30);
         }
     }
 }
