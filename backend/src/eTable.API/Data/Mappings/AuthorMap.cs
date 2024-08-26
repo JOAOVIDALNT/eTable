@@ -11,6 +11,8 @@ namespace eTable.API.Data.Mappings
             builder
                 .ToTable("Authors")
                 .HasKey(x => x.Id);
+
+            builder.Property(x => x.Name).HasMaxLength(50);
         }
     }
 }

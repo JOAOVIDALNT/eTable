@@ -16,6 +16,9 @@ namespace eTable.API.Data
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.ApplyConfiguration(new UserMap());
+            modelBuilder.ApplyConfiguration(new BookMap());
+            modelBuilder.ApplyConfiguration(new AuthorMap());
+            modelBuilder.ApplyConfiguration(new GenreMap());
         }
     }
 }

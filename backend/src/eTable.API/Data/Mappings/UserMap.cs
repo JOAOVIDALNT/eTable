@@ -12,6 +12,9 @@ namespace eTable.API.Data.Mappings
                 .ToTable("Users")
                 .HasKey(x => x.Id);
 
+            builder.Property(x => x.Email).HasMaxLength(75);
+            builder.Property(x => x.Name).HasMaxLength(50);
+
             builder.HasMany(u => u.Books)
                 .WithOne(b => b.User)
                 .HasForeignKey(b => b.UserId)
