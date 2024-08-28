@@ -1,4 +1,4 @@
-﻿namespace eTable.API.Models.Entities.Base
+﻿namespace eTable.Domain.Models.Entities.Base
 {
     public class EntityBase
     {

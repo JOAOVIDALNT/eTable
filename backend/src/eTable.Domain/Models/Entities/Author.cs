@@ -1,6 +1,6 @@
-﻿using eTable.API.Models.Entities.Base;
+﻿using eTable.Domain.Models.Entities.Base;
 
-namespace eTable.API.Models.Entities
+namespace eTable.Domain.Models.Entities
 {
     public class Author : EntityBase
     {
