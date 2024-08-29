@@ -9,17 +9,21 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{734EDFB2
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "eTable.API", "src\eTable.API\eTable.API.csproj", "{DC7EA822-2499-4772-BD78-64ABD7AB0A52}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eTable.Application", "src\eTable.Application\eTable.Application.csproj", "{04907F0B-6D87-4410-B41E-065A5C2E3ED0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "eTable.Application", "src\eTable.Application\eTable.Application.csproj", "{04907F0B-6D87-4410-B41E-065A5C2E3ED0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eTable.Infrastructure", "src\eTable.Infrastructure\eTable.Infrastructure.csproj", "{FEA62D10-2AC5-49ED-8DA6-338E4BD924FF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "eTable.Infrastructure", "src\eTable.Infrastructure\eTable.Infrastructure.csproj", "{FEA62D10-2AC5-49ED-8DA6-338E4BD924FF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eTable.Domain", "src\eTable.Domain\eTable.Domain.csproj", "{DE7EBA01-4291-4E85-A992-29627E7C21F3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "eTable.Domain", "src\eTable.Domain\eTable.Domain.csproj", "{DE7EBA01-4291-4E85-A992-29627E7C21F3}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "shared", "shared", "{80110966-B397-4B05-81AF-C3775CC2D132}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eTable.Exception", "shared\eTable.Exception\eTable.Exception.csproj", "{E2282B69-940B-4598-9DF1-AF08E646AACD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "eTable.Exception", "shared\eTable.Exception\eTable.Exception.csproj", "{E2282B69-940B-4598-9DF1-AF08E646AACD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eTable.Communication", "shared\eTable.Communication\eTable.Communication.csproj", "{731D11F4-386F-461D-8EBD-10616213D6F6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "eTable.Communication", "shared\eTable.Communication\eTable.Communication.csproj", "{731D11F4-386F-461D-8EBD-10616213D6F6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Validators.Test", "tests\Validators.Test\Validators.Test.csproj", "{D059D7EB-EF2B-4D82-879C-99E7C7327F70}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommonTestUtilities", "tests\CommonTestUtilities\CommonTestUtilities.csproj", "{A64E190C-89CD-4F9F-9AD8-BFEA76A67585}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +55,14 @@ Global
 		{731D11F4-386F-461D-8EBD-10616213D6F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{731D11F4-386F-461D-8EBD-10616213D6F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{731D11F4-386F-461D-8EBD-10616213D6F6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D059D7EB-EF2B-4D82-879C-99E7C7327F70}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D059D7EB-EF2B-4D82-879C-99E7C7327F70}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D059D7EB-EF2B-4D82-879C-99E7C7327F70}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D059D7EB-EF2B-4D82-879C-99E7C7327F70}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A64E190C-89CD-4F9F-9AD8-BFEA76A67585}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A64E190C-89CD-4F9F-9AD8-BFEA76A67585}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A64E190C-89CD-4F9F-9AD8-BFEA76A67585}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A64E190C-89CD-4F9F-9AD8-BFEA76A67585}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -62,6 +74,8 @@ Global
 		{DE7EBA01-4291-4E85-A992-29627E7C21F3} = {F2CF6FF7-0F59-4ABB-9E84-B55E68BD9AB8}
 		{E2282B69-940B-4598-9DF1-AF08E646AACD} = {80110966-B397-4B05-81AF-C3775CC2D132}
 		{731D11F4-386F-461D-8EBD-10616213D6F6} = {80110966-B397-4B05-81AF-C3775CC2D132}
+		{D059D7EB-EF2B-4D82-879C-99E7C7327F70} = {734EDFB2-0BED-4955-ADA0-0E31242D75FE}
+		{A64E190C-89CD-4F9F-9AD8-BFEA76A67585} = {734EDFB2-0BED-4955-ADA0-0E31242D75FE}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5D4411ED-45AA-42BC-B71D-E73C3768BA62}
