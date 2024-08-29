@@ -1,4 +1,7 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using eTable.Application.Services.Interfaces;
+using eTable.Communication.Requests;
+using eTable.Communication.Responses;
+using Microsoft.AspNetCore.Mvc;
 
 namespace eTable.API.Controllers
 {
@@ -8,10 +11,11 @@ namespace eTable.API.Controllers
     public class UserController : ControllerBase
     {
         [HttpPost]
-        
-        public async Task<ActionResult> RegisterUser()
+        [ProducesResponseType(typeof(RegisterUserResponseDTO), StatusCodes.Status201Created)]
+        public async Task<IActionResult> RegisterUser([FromServices] IUserService userService, [FromBody] RegisterUserRequestDTO request)
         {
-            return Ok();
+            var result = await userService.RegisterUser(request);
+            return Created(string.Empty, result);
         }
     }
 }

@@ -3,6 +3,7 @@ using eTable.Application.Services;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using eTable.Application.Configs;
+using eTable.Application.Security;
 
 namespace eTable.Application.Extensions
 {
@@ -12,6 +13,7 @@ namespace eTable.Application.Extensions
         {
             AddServices(services);
             AddAutoMapper(services);
+            AddPassEncrypter(services,config);
         }
 
         private static void AddServices(IServiceCollection services)
@@ -25,6 +27,12 @@ namespace eTable.Application.Extensions
             {
                 options.AddProfile(new MappingConfig());
             }).CreateMapper());
+        }
+
+        private static void AddPassEncrypter(IServiceCollection services, IConfiguration config)
+        {
+            var secretKey = config.GetValue<string>("Settings:Password:SecretKey");
+            services.AddScoped(options => new PasswordEncrypter(secretKey!));
         }
 
     }
