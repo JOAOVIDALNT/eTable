@@ -3,7 +3,6 @@ using eTable.Application.Services;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using eTable.Application.Configs;
-using eTable.Application.Security;
 
 namespace eTable.Application.Extensions
 {

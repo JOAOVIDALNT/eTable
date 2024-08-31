@@ -1,7 +1,7 @@
 ﻿using Bogus;
 using eTable.Communication.Requests;
 
-namespace CommonTestUtilities.Requests
+namespace CommonTestUtilities.Builders.Requests
 {
     public class RegisterUserRequestBuilder
     {

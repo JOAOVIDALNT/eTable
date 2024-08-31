@@ -1,7 +1,7 @@
 ﻿using System.Security.Cryptography;
 using System.Text;
 
-namespace eTable.Application.Security
+namespace eTable.Application.Configs
 {
     public class PasswordEncrypter
     {
@@ -22,7 +22,7 @@ namespace eTable.Application.Security
         {
             var sb = new StringBuilder();
 
-            foreach ( var b in bytes )
+            foreach (var b in bytes)
             {
                 var hex = b.ToString("x2");
                 sb.Append(hex);

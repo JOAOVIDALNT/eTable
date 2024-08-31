@@ -1,4 +1,4 @@
-﻿using CommonTestUtilities.Requests;
+﻿using CommonTestUtilities.Builders.Requests;
 using eTable.Exception.Resources;
 using eTable.Infrastructure.Data.Validators;
 using FluentAssertions;

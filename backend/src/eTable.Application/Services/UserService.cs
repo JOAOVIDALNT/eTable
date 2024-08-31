@@ -1,5 +1,5 @@
 ﻿using AutoMapper;
-using eTable.Application.Security;
+using eTable.Application.Configs;
 using eTable.Application.Services.Interfaces;
 using eTable.Communication.Requests;
 using eTable.Communication.Responses;
