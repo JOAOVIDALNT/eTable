@@ -14,6 +14,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\shared\eTable.Communication\eTable.Communication.csproj" />
+    <ProjectReference Include="..\..\src\eTable.Application\eTable.Application.csproj" />
   </ItemGroup>
 
 </Project>
