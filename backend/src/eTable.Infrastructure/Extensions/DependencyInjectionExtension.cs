@@ -18,6 +18,10 @@ namespace eTable.Infrastructure.Extensions
         public static void AddInfrastructure(this IServiceCollection services, IConfiguration config)
         {
             AddRepositories(services);
+
+            if (config.IsUnitTestEnvironment())
+                return;
+
             AddDatabase(services, config);
         }
 
@@ -35,6 +39,11 @@ namespace eTable.Infrastructure.Extensions
             {
                 options.UseSqlServer(config.GetConnectionString("DefaultDb"));
             });
+        }
+
+        private static bool IsUnitTestEnvironment(this IConfiguration config)
+        {
+            return config.GetValue<bool>("InMemoryTest");
         }
     }
 }
