@@ -24,6 +24,9 @@ namespace eTable.API.Middlewares
                 cultureInfo = new CultureInfo(requestedCulture);
             }
 
+            CultureInfo.CurrentCulture = cultureInfo;
+            CultureInfo.CurrentUICulture = cultureInfo;
+
             await _next(context);
         }
     }
